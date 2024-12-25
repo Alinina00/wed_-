@@ -21,3 +21,34 @@
          url("/static/fonts/Inter-Regular.woff2") format("woff");
     font-weight: 400;
 }
+@font-face {
+    font-family: "Inter";
+    src: url("/static/fonts/inter-italic.ttf") format("truetype"),
+    url("/static/fonts/inter-italic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Saira";
+    src: url("/static/fonts/saira-medium.ttf") format("truetype"),
+    url("/static/fonts/saira-medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Saira";
+    src: url("/static/fonts/saira-semibold.ttf") format("truetype"),
+    url("/static/fonts/saira-semibold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Saira";
+    src: url("/static/fonts/saira-regular.ttf") format("truetype"),
+    url("/static/fonts/saira-regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
