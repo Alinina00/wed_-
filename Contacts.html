@@ -4,72 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/assets/styles/style.css">
 </head>
 <body>
     <!-- Шапка сайта -->
-    <header>
-        <img src="logo.png" alt="Логотип" width="150">
-        <nav>
+    <header class="site-header">
+        <nav class="main-nav">
             <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="Contacts.html">Контакты</a></li>
+                <li><a href="index.html">IT-help.ru</a></li>
+           
             </ul>
         </nav>
-        <!-- Хлебные крошки -->
         <div class="breadcrumbs">
-            <a href="index.html">Главная</a> &gt; Контакты
+            <a href="index.html">Главная</a> &gt; <span>Контакты</span>
         </div>
     </header>
 
     <!-- Основное содержание -->
-    <main>
-        <h2 class="header2">Contact Us</h2>
-        <p class="paragraph">Свяжитесь с нами, если у вас возникли вопросы!</p>
+    <main class="main-content">
+        <section class="contact-section">
+            <h2 class="header2" style="color: #1F3F68;">Свяжитесь с нами</h2>
+            <p class="paragraph">, Если у вас возникли вопросы, будем рады вам помочь!</p>
 
-        <img src="image.png" alt="Изображение" width="300">
-        
-        <h4 class="header4">Address</h4>
-        <p class="paragraph">Тюмень, Россия, ул. Перекопская, 15А</p>
-        
-        <h4 class="header4">Phone</h4>
-        <ul>
-            <li>8-800-555-35-35</li>
-            <li>8-900-123-45-67</li>
-        </ul>
-        
-        <h4 class="header4">Online Service</h4>
-        <ul>
-            <li><a href="https://webcompany.com" class="paragraph">Наш сайт</a></li>
-            <li><a href="mailto:support@webcompany.com" class="paragraph">Email</a></li>
-        </ul>
+            <div class="contact-details">
+                <!-- Блок информации -->
+                <div class="contact-info">
+                    <h4 class="header4">Адрес</h4>
+                    <p>Тюмень, Россия, ул. Перекопская, 15А</p>
 
-        <h4 class="header4">Send us a message</h4>
-        <form action="#" method="POST" class="contact-form">
-            <label for="fullName">Full Name:</label><br>
-            <input type="text" id="fullName" name="fullName" class="form-input" required><br><br>
+                    <h4 class="header4">Телефон</h4>
+                    <ul>
+                        <li>8-800-555-35-35</li>
+                        <li>8-900-123-45-67</li>
+                    </ul>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" class="form-input" required><br><br>
+                    <h4 class="header4">Онлайн сервис</h4>
+                    <ul>
+                        <li><a href="https://webcompany.com">Наш сайт</a></li>
+                        <li><a href="mailto:support@webcompany.com">Email</a></li>
+                    </ul>
+                </div>
 
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" class="form-input" required></textarea><br><br>
+                <!-- Блок изображения -->
+                <div class="contact-image">
+                    <img src="image.png" alt="Изображение">
+                </div>
 
-            <input type="submit" value="Submit" class="submit-btn">
-        </form>
+                <!-- Форма обратной связи -->
+                <div class="contact-form-wrapper">
+                    <form action="#" method="POST" class="contact-form">
+                        <label for="fullName">Ваше имя:</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Иван Иванов" required>
+
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Ваше сообщение" required></textarea>
+
+                        <input type="submit" value="Отправить" class="submit-btn">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блоки статистики компании -->
+        <section class="stats-section">
+            <div class="stat-block blue-block">
+                <h3 class="stat-title">1 год на рынке</h3>
+                <p class="stat-text">Мы успешно работаем на рынке разработки мобильных приложений и чат-ботов уже целый год.</p>
+            </div>
+            <div class="stat-block turquoise-block">
+                <h3 class="stat-title">1000 довольных клиентов</h3>
+                <p class="stat-text">Мы гордимся тем, что 1000 клиентов доверили нам свои проекты и остались довольны результатами.</p>
+            </div>
+            <div class="stat-block blue-block">
+                <h3 class="stat-title">3 крупных проекта</h3>
+                <p class="stat-text">Мы успешно завершили три крупных проекта для лидеров отрасли.</p>
+            </div>
+            <div class="stat-block turquoise-block">
+                <h3 class="stat-title">5 городов</h3>
+                <p class="stat-text">Наши услуги востребованы в пяти городах, и мы продолжаем расширяться.</p>
+            </div>
+            <div class="stat-block blue-block">
+                <h3 class="stat-title">Главный офис в Тюмени</h3>
+                <p class="stat-text">Наш главный офис находится в самом сердце Тюмени.</p>
+            </div>
+        </section>
     </main>
+    <hr>
 
     <!-- Подвал сайта -->
-    <footer>
-        <h3 class="header3">Контакты</h3>
-        <p class="paragraph">Наши контактные данные:</p>
-        <hr>
-        <ul>
-            <li>Телефон: 8-800-555-35-35</li>
-            <li>Email: support@webcompany.com</li>
-        </ul>
+    <footer class="site-footer">
+        <section class="contact-info">
+            <h3>Контакты</h3>
+            <p>Наши контактные данные:</p>
+            <ul>
+                <li>Телефон: 8-800-555-35-35</li>
+                <li>Email: support@webcompany.com</li>
+            </ul>
+        </section>
         <p>Все права защищены © 2024</p>
     </footer>
 </body>
 </html>
-

@@ -8,46 +8,96 @@
 </head>
 <body>
     <!-- Шапка сайта -->
-    <header>
-        <img src="logo.png" alt="Логотип" width="150">
-        <nav>
+    <header class="site-header">
+        <nav class="main-nav">
             <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="Contacts.html">Контакты</a></li>
+                <li><a href="Contacts.html">IT-help.ru</a></li>
+   
             </ul>
         </nav>
         <!-- Хлебные крошки -->
         <div class="breadcrumbs">
-            <a href="#">Раз</a> &gt; 
-            <a href="#">Два</a> &gt; 
-            <a href="#">Три</a> &gt; 
-            <a href="#">Четыре</a>
+            <a href="index.html">Главная</a> &gt; <a href="Contacts.html">Контакты</a>
         </div>
     </header>
 
     <!-- Основное содержание -->
-    <h1 class="header1">Добро пожаловать на сайт</h1>
-    <p class="paragraph">Это наш первый сайт, созданный с помощью HTML.</p>
+    <main class="main-content">
+        <section class="welcome-section">
+            <h1 class="header1">Добро пожаловать на сайт</h1>
+            <p class="paragraph">Мы предлагаем услуги по разработке мобильных приложений и чат-ботов.</p>
+        </section>
 
-    <h3 class="header3">О нас</h3>
-    <h4 class="header4">Что мы делаем</h4>
-    <p class="paragraph">Мы создаем удивительные веб-сайты для ваших нужд.</p>
+        <section class="services-section">
+            <div class="service-block blue-block">
+                <img src="src/assets/icons/mobile.png" alt="Mobile Apps Icon" class="service-icon">
+                <h3 class="service-title">Разработка Мобильных Приложений</h3>
+                <p class="service-description">Мы создаем высококачественные мобильные приложения для всех платформ.</p>
+                <a href="mobile-apps.html" class="service-link">Подробнее</a>
+            </div>
+            <div class="service-block turquoise-block">
+                <img src="src/assets/icons/bot.png" alt="Chat Bots Icon" class="service-icon">
+                <h3 class="service-title">Разработка Чат-ботов</h3>
+                <p class="service-description">Интегрируйте умных чат-ботов в свои системы для улучшения взаимодействия с клиентами.</p>
+                <a href="chatbots.html" class="service-link">Подробнее</a>
+            </div>
+            <div class="service-block blue-block">
+                <img src="src/assets/icons/globe-alt.svg" alt="Web Design Icon" class="service-icon">
+                <h3 class="service-title">Веб-дизайн и Разработка</h3>
+                <p class="service-description">Мы создаем уникальные и адаптивные веб-дизайны для вашего бизнеса.</p>
+                <a href="web-design.html" class="service-link">Подробнее</a>
+            </div>
+        </section>
 
-    <h3 class="header3">Наша миссия</h3>
-    <p class="paragraph">Мы стремимся к инновациям и качеству.</p>
+        <section class="additional-info-section">
+            <!-- Новые блоки FAQ -->
+            <div class="faq-block">
+                <button class="faq-question" onclick="toggleFAQ(this)">Сколько стоит разработка мобильного приложения? <span class="plus-icon">+</span></button>
+                <div class="faq-answer">Стоимость зависит от сложности и требований проекта. Свяжитесь с нами для получения точной оценки.</div>
+            </div>
+            <div class="faq-block">
+                <button class="faq-question" onclick="toggleFAQ(this)">Предоставляете ли вы гарантию на мобильные приложения? <span class="plus-icon">+</span></button>
+                <div class="faq-answer">Да, мы предоставляем гарантию на все наши разработки.</div>
+            </div>
+            <div class="faq-block">
+                <button class="faq-question" onclick="toggleFAQ(this)">Сколько времени занимает разработка? <span class="plus-icon">+</span></button>
+                <div class="faq-answer">Средние сроки разработки зависят от сложности проекта и могут составлять от 3 до 6 месяцев.</div>
+            </div>
+            <div class="faq-block">
+                <button class="faq-question" onclick="toggleFAQ(this)">Гарантируете ли вы конфиденциальность информации? <span class="plus-icon">+</span></button>
+                <div class="faq-answer">Да, мы гарантируем полную конфиденциальность и защиту ваших данных.</div>
+            </div>
+        </section>
+
+        <!-- Блок контактов -->
+        <section class="contact-section">
+            <div class="contact-block">
+                <h3 class="contact-title">Оставьте ваши контактные данные, и мы свяжемся с вами в течение 30 минут</h3>
+                <form class="contact-form">
+                    <label for="phone-number">Номер телефона</label>
+                    <input type="text" id="phone-number" name="phone-number" placeholder="+7 (111) 111-11-11">
+                    <label for="full-name">Полное имя</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="Иван Иванов">
+                    <button type="submit" class="submit-btn">Получить консультацию</button>
+                </form>
+            </div>
+            <div class="contact-image">
+                <img src="src/assets/img/fn.png" alt="Contact Background Image">
+            </div>
+        </section>
+    </main>
     <hr>
 
     <!-- Подвал сайта -->
-    <footer>
-        <h3 class="header3">Контакты</h3>
-        <p class="paragraph">Если у вас есть вопросы, не стесняйтесь связаться с нами!</p>
-        <hr>
-        <ul>
-            <li>Телефон: 8-800-555-35-35</li>
-            <li>Email: support@webcompany.com</li>
-        </ul>
+    <footer class="site-footer">
         <p>Все права защищены © 2024</p>
     </footer>
+
+    <script>
+        function toggleFAQ(element) {
+            element.classList.toggle("active");
+            element.nextElementSibling.classList.toggle("show");
+        }
+    </script>
 </body>
 </html>
-

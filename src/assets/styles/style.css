@@ -7,83 +7,70 @@
     color: yellow !important;
 }
 
-.test {
-    color: red !important;
-}
+/* Общие стили для всего сайта */
 body {
     background-image: url('src/assets/img/lb7.png');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-/* Общие стили для выравнивания по центру */
-body {
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
-header, main, footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.site-header {
+    background-color: #add8e6;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-header nav ul {
+.main-nav ul {
     list-style-type: none;
     padding: 0;
 }
 
-header nav ul li {
+.main-nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
-.paragraph {
-    font-size: 16px;
-    line-height: 26px;
+.main-nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 40px;
+    font-family: 'Saira', sans-serif;
+    font-weight: bold;
+}
+
+.header1, .header2, .header3, .header4 {
     color: #1F3F68;
 }
 
-.header1 {
-    font-size: 64px;
-    color: #1F3F68;
-}
-
+/* Изменение стилей заголовка H2 */
 .header2 {
-    font-weight: 500;
-    font-size: 44px;
-    text-align: center;
+    font-size: 30px;
+    color: #4A90E2;
+    font-family: 'Roboto', sans-serif;
 }
 
-.header3 {
-    font-size: 36px;
-    text-align: center;
-}
-
-.header4 {
-    font-size: 20px;
-    line-height: 30px;
+/* Изменение стилей абзацев */
+.paragraph {
+    font-size: 18px;
     color: #1F3F68;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
 }
 
 .form-input {
     border: 1px solid #356EAD;
-    box-sizing: border-box;
     border-radius: 10px;
     opacity: 0.4;
 }
 
-/* Стили для кнопки Submit */
 .submit-btn {
     background: #5A98D0;
-    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
     border-radius: 10px;
-    font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
-    text-align: center;
     color: #FFFFFF;
-    text-transform: uppercase;
     border: none;
     cursor: pointer;
     padding: 10px 20px;
@@ -93,29 +80,25 @@ header nav ul li {
 .submit-btn:hover {
     transform: scale(1.05);
 }
-/* Контейнер формы */
+
 .contact-form {
-    background-image: url('src/assets/img/lb7.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: rgba(255, 255, 255, 0.7); /* Полупрозрачный фон */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     margin: auto;
 }
 
-
-/* Стили для хлебных крошек */
 .breadcrumbs {
-    font-size: 14px;
-    color: #356EAD;
-    background: linear-gradient(90deg, #5A98D0 0%, #7BAFD4 100%);
-    padding: 10px;
-    border-radius: 5px;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #5A98D0;
+    padding: 15px;
+    border-radius: 10px;
     display: inline-block;
     margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Saira', sans-serif;
 }
 
 .breadcrumbs a {
@@ -127,3 +110,266 @@ header nav ul li {
 .breadcrumbs a:hover {
     text-decoration: underline;
 }
+
+/* Стили для сервисных блоков */
+.services-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.service-block {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.service-block.blue-block {
+    background-color: #91b3f2;
+}
+
+.service-block.turquoise-block {
+    background-color: #75c1ff;
+}
+
+.service-icon {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.service-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.service-link {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/* Стили для блока контактов */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #6495ed, #42aaff);
+    color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    color: #1F3F68
+}
+
+.contact-info {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+
+.contact-info, .contact-image, .contact-form-wrapper {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    color: #1F3F68;
+    font-family: 'Saira', sans-serif;
+    font-weight: bold;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #1F3F68;
+    font-family: 'Saira', sans-serif;
+    font-weight: bold;
+
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Saira', sans-serif;
+    font-weight: bold;
+
+}
+
+.submit-btn {
+    background: #5A98D0;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: transform 0.2s;
+    font-family: 'Saira', sans-serif;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Стили для блока статистики */
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: linear-gradient(to right, #0067a5, #005fa8);
+    border-radius: 10px;
+}
+
+/* Стили для каждого блока статистики */
+.stat-block {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: center;
+    color: #1F3F68;
+    padding: 10px;
+}
+
+.blue-block {
+    background-color: #91b3f2;
+}
+
+.turquoise-block {
+    background-color: #75c1ff;
+}
+
+.stat-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stat-text {
+    font-size: 14px;
+}
+
+.contact-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Стили для FAQ блока */
+.faq-block {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #007BFF;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plus-icon {
+    font-size: 20px;
+    color: #007BFF;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Анимация для открытия и закрытия */
+.faq-question.active .plus-icon::after {
+    content: "-";
+}
+
+.faq-answer.show {
+    display: block;
+}
+
+/* Подвал сайта */
+.site-footer {
+    padding: 20px;
+    background-color: #add8e6;
+    color: #1F3F68;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .services-section, .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-block, .contact-content, .contact-image, .contact-form-wrapper {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
